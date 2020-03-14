@@ -1,6 +1,6 @@
 import java.util.*
 
-class Person(initialAge: Int) {
+open class People(initialAge: Int) {
     private var age: Int = 0
 
     init {
@@ -29,7 +29,7 @@ fun main(args: Array<String>) {
     val t = sc.nextInt()
     for (i in 0 until t) {
         val age = sc.nextInt()
-        val p = Person(age)
+        val p = People(age)
         p.amIOld()
         for (j in 0..2) {
             p.yearPasses()
